@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html leng="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Encriptador.</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" href="img/Logo.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,800&display=swap" rel="stylesheet">
+	<script src="script.js"></script>
+</head>
+<body>
+	<header>
+		<img src="img/Logo.png">
+		<h1><em>Encriptador.</em></h1>
+	</header>
+	<main id="container">
+		<div class="col1">
+			<textarea id="text1" class="textEntrada" placeholder="Ingrese el texto aqui"></textarea>
+			<p>&#9888; Solo admite letras minusculas y sin acentos.</p>
+			<div class="botones">
+				<button type="button"class="button type1" onclick="BtnEntrada()">Encriptar</button>
+				<button type="button" class="button type1" onclick="BtnDesencriptar()">Desencriptar</button>
+			</div>
+		</div>
+		<div class="col2">
+			<textarea id="text2" class="salida" disabled></textarea>
+			<section id="mensaje">
+				<h3 >Ningún mensaje fue encontrado</h3>
+				<p >Ingresa el texto que desees encriptar o desencriptar.</p>
+			</section>
+			<button id="cp" type="button" class="button type1 Copia" onclick="BtnCopiar()">Copiar</button>
+		</div>
+	</main>
+	<footer>
+		<p>©Copyright by Daniel Barrios.</p>
+	</footer>
+</body>
+</html>
