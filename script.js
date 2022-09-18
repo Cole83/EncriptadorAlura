@@ -60,7 +60,12 @@ function BtnDesencriptar(){
 
 function BtnCopiar(){
   let contenido=document.getElementById("text2").value;
-
+  if(window.innerWidth<768){
+    const input = document.getElementById("text2");
+    input.focus();
+    input.select();
+    document.execCommand('copy');
+  }
   navigator.clipboard.writeText(contenido); 
   alert("Texto copiado al portapapeles");
   if(window.innerWidth>768)

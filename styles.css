@@ -3,8 +3,7 @@
 }
 header{
     font-size:x-large;
-	background:#add8e6;
-	padding: 1rem;
+    padding: 1rem;
 }
 header h1{
     width: 95%;
@@ -16,19 +15,21 @@ header img{
     margin: 5px;
 }
 body{
-    background-color:#add8e6;
     position: relative;
     min-height: 100vh;
+    background: rgb(71,71,75);
+    background: linear-gradient(180deg, rgba(71,71,75,0.8701855742296919) 0%, rgba(94,181,228,1) 100%);
+
 }
 main{
     padding: 2rem;
-	width: 90%;
+    width: 90%;
     height: 700px;
-	margin: 0 auto;
+    margin: 0 auto;
     display: grid;
-	grid-template-columns: 70% 30%;
+    grid-template-columns: 70% 30%;
 }
-.col1{}
+
 .col1 textarea{
     margin: 1rem;
     padding: 2rem;
@@ -41,6 +42,9 @@ main{
     font-size: xx-large;
     border-color: transparent;
     outline: none;
+}
+.col1 textarea::placeholder{
+    color: #50afaf;
 }
 .col1 p{
     margin: 10px;
@@ -130,17 +134,18 @@ main{
     justify-content: center;
     margin-top: 3rem;
 
-	background-color: transparent;
-	font-size: 20px;
-	outline: none;
-	border: none;
-	height: 400px;
-	resize: none;
-	width: 100%;
-	background-image: url(img/Muñeco.png);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 80%;
+    background-color: transparent;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    height: 400px;
+    resize: none;
+    width: 100%;
+    color: black;
+    background-image: url(img/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
     text-align: center;
 }
 
@@ -188,12 +193,13 @@ footer{
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 420px){
     header{
         font-size: large;
     }
     body{
         font-size: small;
+        max-width: 400px;
     }
     .col1{
         display: grid;
